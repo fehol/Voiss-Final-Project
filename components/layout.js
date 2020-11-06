@@ -1,32 +1,23 @@
-import Header from './header';
-import Footer from './footer';
-import { ThemeProvider, CSSReset } from '@chakra-ui/core';
-import { theme } from '@chakra-ui/core';
+import Header from './Header';
+import { css } from '@emotion/core';
 
-const customTheme = {
-  ...theme,
-  colors: {
-    ...theme.colors,
-    brand: {
-      900: '#1a365d',
-      800: '#153e75',
-      700: '#2a69ac',
-    },
-  },
-};
+const mainStyle = css`
+  background: linear-gradient(to bottom, #6491c7 0, #27323f 100%);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+`;
 
 export default function Layout({ children }) {
   return (
-    <ThemeProvider theme={customTheme}>
-      <CSSReset />
+    <div>
+      <Header />
       <div>
-        <Header />
-        <div>{children}</div>
-
-        <Footer />
+        <main css={mainStyle}>{children}</main>
       </div>
-    </ThemeProvider>
+    </div>
   );
 }
-
-/* <img src="/Version1BG.svg" alt="BG"/> */

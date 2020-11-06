@@ -1,11 +1,11 @@
-import Layout from "../components/layout"
+import Layout from '../components/Layout';
 
-export default function About () {
+export default function About() {
   return (
     <Layout>
       <main>
-    <div>Keith Voss US Dude living in Graz</div>
-    </main>
+        <div>Keith Voss US Dude living in Graz</div>
+      </main>
     </Layout>
-  )
+  );
 }

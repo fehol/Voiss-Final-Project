@@ -1,10 +1,9 @@
-import Layout from "../components/layout";
+import Layout from '../components/Layout';
 
-export default function Clients () {
-
+export default function Clients() {
   return (
     <Layout>
-    <div>My CLients are</div>
+      <div>My CLients are</div>
     </Layout>
-  )
+  );
 }

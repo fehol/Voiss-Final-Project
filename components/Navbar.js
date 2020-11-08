@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 // import { FaHome, FaAddressCard, FaSoundcloud } from 'react-icons/fa';
 // import { RiServiceFill } from 'react-icons/ri';
 // import { MdContactPhone, MdPeople } from 'react-icons/md';
-import { SiInstagram, SiFiverr, SiYoutube, SiTwitter } from 'react-icons/si';
+import { SiInstagram, SiFiverr, SiYoutube } from 'react-icons/si';
 
 const navStyle = css`
   display: flex;
@@ -56,14 +56,14 @@ const socialMedia = css`
       background-color: rgba(0, 0, 0, 0.6);
       & :active {
         background: #f1d74c;
-        color: #ffffff;
+        color: #bd4cf1;
       }
     }
   }
   i {
     margin: auto;
     font-size: 2rem;
-    color: black;
+    color: #f1d74c;
     transition: color 0.8s;
     &:hover {
       color: rgb(255, 255, 255, 0.8);
@@ -136,11 +136,6 @@ export default function Navbar() {
         <a href="https://www.fiverr.com/" css={iconLink}>
           <i>
             <SiFiverr />
-          </i>
-        </a>
-        <a href="https://www.fiverr.com/" css={iconLink}>
-          <i>
-            <SiTwitter />
           </i>
         </a>
       </div>

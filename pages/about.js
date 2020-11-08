@@ -4,7 +4,7 @@ export default function About() {
   return (
     <Layout>
       <main>
-        <div>Keith Voss US Dude living in Graz</div>
+        <div>This will be the page for stuff about Keith</div>
       </main>
     </Layout>
   );

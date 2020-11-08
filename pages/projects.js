@@ -31,7 +31,7 @@ export default function projects() {
             Video Format not supported
           </video>
         </div>
-        <div css={videoBox2}>
+        {/* <div css={videoBox2}>
           <video width="640" height="480" controls>
             <source src="/projects/wieNeu.mp4" type="video/mp4" />
             <track
@@ -42,7 +42,7 @@ export default function projects() {
             />
             Video Format not supported
           </video>
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

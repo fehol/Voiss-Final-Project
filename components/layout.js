@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 
 const mainStyle = css`
   background: linear-gradient(to bottom, #6491c7 0, #27323f 100%);
-
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;

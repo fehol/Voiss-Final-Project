@@ -1,23 +1,23 @@
-import Header from './Header';
 import { css } from '@emotion/core';
+import { Fragment } from 'react';
+import Footer from './Footer';
+import Header from './Header';
 
 const mainStyle = css`
   background: linear-gradient(to bottom, #6491c7 0, #27323f 100%);
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100vh;
-  text-align: center;
 `;
 
 export default function Layout({ children }) {
   return (
-    <div>
-      <Header />
+    <Fragment>
       <div>
-        <main css={mainStyle}>{children}</main>
+        <Header />
+        <div>
+          <main css={mainStyle}>{children}</main>
+        </div>
       </div>
-    </div>
+
+      <Footer />
+    </Fragment>
   );
 }

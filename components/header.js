@@ -1,6 +1,11 @@
 // import { Fragment } from 'react';
-import Navbar from './Navbar';
+import Navbar from './Navigation/Navbar';
+import { css } from '@emotion/core';
 
 export default function Header() {
-  return <Navbar />;
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
 }

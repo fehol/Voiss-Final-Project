@@ -1,16 +1,37 @@
-import { useState } from 'react';
+import Head from 'next/head';
+import { Fragment, useState } from 'react';
+import Layout from '../components/Layout';
+import Link from 'next/link';
 
 export default function Login() {
-  // const [loginError, setLoginError] = useState('');
-  const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
   return (
-    <input
-      name="email"
-      type="email"
-      value={email}
-      onChange={(e) => setEmail(e.target.value)}
-    />
+    <Fragment>
+      <Head>
+        <title>Login</title>
+        <link rel="" href="" />
+      </Head>
+      <Layout>
+        <h1>Login</h1>
+        <form>
+          <input
+            value={username}
+            onChange={(e) => setUsername(e.currentTarget.value)}
+          />
+          <input
+            value={password}
+            type="password"
+            onChange={(e) => setPassword(e.currentTarget.value)}
+          />
+          <button>Login</button>
+        </form>
+        <Link href="/register">
+          <a>Register</a>
+        </Link>
+      </Layout>
+      ;
+    </Fragment>
   );
 }

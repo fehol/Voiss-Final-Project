@@ -27,7 +27,7 @@ const audioBox = css`
   flex-wrap: wrap;
   justify-content: space-around;
   audio::-webkit-media-controls-panel {
-    background-color: #f1d74c;
+    background-color: #f2e183;
   }
   @media (max-width: 768px) {
     display: flex;
@@ -49,6 +49,12 @@ const playerBox = css`
   background-color: none;
   margin: 10px;
   &:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     transform: scale(1.05);
@@ -91,19 +97,19 @@ export default function Home() {
         </div>
         <div css={audioBox}>
           <audio controls css={playerBox}>
-            <source src="/voice/demo1.wav" type="audio/wav" />
-            <track default kind="captions" src="/voice/demo1.wav" /> The Audio
+            <source src="/voice/Commercial.wav" type="audio/wav" />
+            <track default kind="captions" src="/voice/Commercial.wav" /> The
+            Audio doesnt work with your browser
+          </audio>
+          <audio controls css={playerBox}>
+            <source src="/voice/Trilogy.wav" type="audio/wav" />
+            <track default kind="captions" src="/voice/Trilogy.wav" /> The Audio
             doesnt work with your browser
           </audio>
           <audio controls css={playerBox}>
-            <source src="/voice/demo1.wav" type="audio/wav" />
-            <track default kind="captions" src="/voice/demo1.wav" /> The Audio
-            doesnt work with your browser
-          </audio>
-          <audio controls css={playerBox}>
-            <source src="/voice/demo1.wav" type="audio/wav" />
-            <track default kind="captions" src="/voice/demo1.wav" /> The Audio
-            doesnt work with your browser
+            <source src="/voice/Elearning.wav" type="audio/wav" />
+            <track default kind="captions" src="/voice/Elearning.wav" /> The
+            Audio doesnt work with your browser
           </audio>
           <div css={newsletterPosition}>
             <Newsletter />

@@ -2,13 +2,15 @@ import { css } from '@emotion/core';
 import Link from 'next/link';
 
 const footerStyle = css`
-  display: flex;
-  justify-content: space-between;
   background-color: #232e41;
   font-size: 1.5rem;
+  text-align: center;
   a {
     text-decoration: none;
-    color: black;
+    color: #f1d74c;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 

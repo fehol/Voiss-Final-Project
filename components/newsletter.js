@@ -18,7 +18,7 @@ const headerStyle = css`
   button {
     padding: 10px;
     &:hover {
-      background-color: #f1d74c;
+      background-color: #f2e183;
     }
   }
 `;
@@ -54,8 +54,8 @@ export default function Newsletter() {
 
   return (
     <div css={headerStyle}>
-      <h2>I have a super cool Newsletter!</h2>
-      It's full of information about my projects and my Youtube channel{' '}
+      <h2>I also have a Newsletter!</h2>
+      It's full of Information about my Projects and my Youtube Channel{' '}
       <a href="https://www.youtube.com/channel/UC3Gr3vqGHZxMKNY26t0QUDg">
         Trilogy Trio
       </a>

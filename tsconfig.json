@@ -29,7 +29,7 @@
     "*.config.js",
     "**/*.ts",
     "**/*.tsx",
-    "**/*.js"
+    "**/*.js", "db-connect.mjs"
   ],
   "exclude": [
     "node_modules"

@@ -15,4 +15,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  width: auto !important;
+  overflow-x: hidden !important;
 }

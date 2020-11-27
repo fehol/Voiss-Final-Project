@@ -1,10 +1,14 @@
 import Link from 'next/link';
 import { css } from '@emotion/core';
-import { SiInstagram, SiFiverr, SiYoutube } from 'react-icons/si';
+import { SiInstagram, SiFiverr, SiYoutube, SiBars } from 'react-icons/si';
+import { AiOutlineBars } from 'react-icons/ai';
 
 const mainStyle = css`
   @media (max-width: 768px) {
-    ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    /* ul {
       position: absolute;
       right: 0px;
       height: 92vh;
@@ -16,7 +20,7 @@ const mainStyle = css`
       align-items: center;
       transition: transform 0.5s ease-in;
       z-index: 9;
-    }
+    } */
   }
 `;
 
@@ -28,11 +32,11 @@ const navStyle = css`
   width: 100%;
   z-index: 9;
   padding: 0 1rem;
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     ul {
-      width: 80%;
+      width: 100%;
     }
-  }
+  } */
 `;
 
 const logo = css`
@@ -55,7 +59,7 @@ const navLinks = css`
     font-size: 18px;
     transition: color 0.6s;
     &:hover {
-      color: #f1d74c;
+      color: #f2e183;
     }
   }
   li {
@@ -63,7 +67,7 @@ const navLinks = css`
   }
 `;
 
-const socialMedia = css`
+export const socialMedia = css`
   display: flex;
   justify-content: space-between;
   a {
@@ -93,6 +97,9 @@ const h4Style = css`
   &:hover {
     color: #f1d74c;
   }
+  /* @media screen and (min-width: 600px) {
+    display: none;
+  } ; */
 `;
 
 export default function Navbar() {

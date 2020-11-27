@@ -21,10 +21,12 @@ const mainStyle = css`
   height: 100vh;
   flex-direction: column;
   text-align: center;
+  h1 {
+    margin-top: 2rem;
+  }
 `;
 
 const youtube = css`
-  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,19 +34,37 @@ const youtube = css`
 
   li {
     list-style: none;
-    padding: 25px;
+    padding: 35px;
     a {
       text-decoration: none;
       color: #f1d74c;
     }
   }
+  p {
+    display: flex;
+    justify-content: space-around;
+  }
 `;
 
 const headingStyle = css`
   text-align: center;
-  p {
-    font-size: 24px;
+`;
+
+const playButton = css`
+  position: absolute;
+  z-index: 3;
+  margin: 5px;
+  margin-top: 4rem;
+
+  &:hover {
+    content: url('/PlayHover.png');
+    z-index: 5;
   }
+`;
+
+const ytThumbnail = css`
+  position: relative;
+  z-index: 1;
 `;
 
 export default function Youtube({ data }) {
@@ -54,7 +74,7 @@ export default function Youtube({ data }) {
       <title>About</title>
       <main css={mainStyle}>
         <h1 css={headingStyle}>Projects</h1>
-        <p>Here you can find my projects and projects I worked on</p>
+        <p>Here you can find my previous projects and projects I work on!</p>
 
         <div css={youtube}>
           <ul>
@@ -70,12 +90,18 @@ export default function Youtube({ data }) {
                   >
                     <h3>{title}</h3>
                     <p>
-                      {' '}
                       <img
+                        css={playButton}
+                        src="/PlayDefault.png"
+                        alt="playbutton"
+                        height="50px"
+                      />
+                      <img
+                        css={ytThumbnail}
                         width={medium.width}
                         height={medium.height}
                         src={medium.url}
-                        alt=""
+                        alt={medium.title}
                       />
                     </p>
                   </a>

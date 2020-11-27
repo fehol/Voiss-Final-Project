@@ -9,6 +9,10 @@ const mainStyle = css`
   height: 100vh;
   flex-direction: column;
   text-align: center;
+  h1 {
+    margin-top: 2rem;
+    font-size: 24px;
+  }
 `;
 
 const section1Style = css`
@@ -23,7 +27,8 @@ const cardWrapper = css`
 `;
 
 const card = css`
-  background: #f1d74c;
+  background: #f2e183;
+  /* #f1d74c */ // erstes Gelb
   border-radius: 3px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
   flex: 1;
@@ -36,6 +41,23 @@ const card = css`
     -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     transform: scale(1.05);
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  a {
+    &:hover {
+      text-decoration: underline;
+      -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+    }
   }
 `;
 
@@ -62,7 +84,7 @@ const section2Style = css`
 
   div {
     height: 300px;
-    background: #f1d74c;
+    background: #f2e183;
 
     border-radius: 3px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
@@ -73,6 +95,12 @@ const section2Style = css`
     text-align: center;
     transition: all 0.5s ease-in-out;
     &:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+      -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+      box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
       -webkit-transform: scale(1.05);
       -moz-transform: scale(1.05);
       transform: scale(1.05);
@@ -114,6 +142,10 @@ export default function Service() {
     <Layout>
       <title>Service</title>
       <main css={mainStyle}>
+        <h1>
+          These are the services I offer at the moment <br /> but please feel
+          free to ask about other services you need if you are interested.
+        </h1>
         <section css={section1Style}>
           <div css={cardWrapper}>
             <div css={card}>

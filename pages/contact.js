@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import { css } from '@emotion/core';
-import Newsletter from '../components/Newsletter';
 import Link from 'next/link';
 
 const mainStyle = css`

@@ -1,5 +1,4 @@
 import { css } from '@emotion/core';
-import { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -9,7 +8,7 @@ const mainStyle = css`
 
 export default function Layout({ children }) {
   return (
-    <Fragment>
+    <main>
       <div>
         <Header />
         <div>
@@ -18,6 +17,6 @@ export default function Layout({ children }) {
       </div>
 
       <Footer />
-    </Fragment>
+    </main>
   );
 }

@@ -2,7 +2,6 @@ import Layout from '../components/Layout';
 import { css } from '@emotion/core';
 import { SiFiverr } from 'react-icons/si';
 import Link from 'next/link';
-// import { Fragment } from 'react';
 
 const mainStyle = css`
   display: flex;

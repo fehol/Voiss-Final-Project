@@ -55,6 +55,7 @@ export default function Impressum() {
             Website reproduziert, gespeichert, verarbeitet, vervielfältigt oder
             verbreitet werden.{' '}
           </p>
+          <p>Website Design and Coding: Felix Hollmann</p>
         </section>
       </div>
     </Layout>

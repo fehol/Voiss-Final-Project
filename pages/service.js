@@ -148,7 +148,7 @@ export default function Service() {
         <section css={section1Style}>
           <div css={cardWrapper}>
             <div css={card}>
-              <h2>Voice Over Rates</h2>
+              <h2>Voice Over</h2>
               <h4 css={h4Style}>For more Information please visit</h4>
               <a css={iconLink} href="https://www.fiverr.com/">
                 <i>
@@ -187,7 +187,7 @@ export default function Service() {
         </section>
         <section css={section2Style}>
           <div>
-            <h2>Keith provides services for these types of projects:</h2>
+            <h2>Keith provides Services for these Types of Projects:</h2>
             <ul css={unorderedList}>
               <li>Commercials</li>
               <li>Trailers</li>
@@ -210,7 +210,7 @@ export default function Service() {
         <div css={projectLink}>
           <h4>For examples of Keith previous work, please visit the</h4>
           <Link href="/projects">
-            <a>Project Section</a>
+            <a>Project Page</a>
           </Link>
         </div>
       </main>

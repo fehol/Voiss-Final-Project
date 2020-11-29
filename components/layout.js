@@ -15,7 +15,6 @@ export default function Layout({ children }) {
           <main css={mainStyle}>{children}</main>
         </div>
       </div>
-
       <Footer />
     </main>
   );

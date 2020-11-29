@@ -29,7 +29,6 @@
     "react-icons": "^3.11.0",
     "react-lite-yt-embed": "^1.1.6",
     "snakecase-keys": "^3.2.0",
-    "swr": "^0.3.8",
     "yarn": "^1.22.10"
   },
   "devDependencies": {

@@ -28,6 +28,7 @@ const image = css``;
 export default function About() {
   return (
     <Layout>
+      <title>About</title>
       <div css={aboutStyle}>
         <div css={containerStyle}>
           <h1>About me</h1>

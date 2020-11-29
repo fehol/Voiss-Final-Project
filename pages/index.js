@@ -11,8 +11,13 @@ const mainStyle = css`
 
 const logoStyle = css``;
 
-const h1Style = css`
+const imgStyle = css`
   margin-top: 3rem;
+
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const h2Style = css``;
@@ -26,11 +31,6 @@ const audioBox = css`
   justify-content: space-around;
   audio::-webkit-media-controls-panel {
     background-color: #f2e183;
-  }
-  @media (max-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    float: left;
   }
   audio {
     -webkit-transition: all 0.5s linear;
@@ -76,7 +76,11 @@ const playerBox = css`
 `;
 
 const newsletterPosition = css`
-  margin-top: 1rem;
+  margin-top: 3rem;
+  @media screen and (max-width: 720px) {
+    margin-top: auto;
+    align-items: center;
+  }
 `;
 
 export default function Home() {
@@ -85,15 +89,18 @@ export default function Home() {
       <title>Home</title>
       <main css={mainStyle}>
         <div css={logoStyle}>
-          <h1 css={h1Style}>
-            <img src="/Logo/Logo.svg" alt="VossLogo" />
-          </h1>
+          <img src="/Logo/Logo.svg" alt="VossLogo" css={imgStyle} />
           <br />
           <h2 css={h2Style}>
             <span>Voice Actor - Teacher - Podcast Host</span>
           </h2>
         </div>
         <div css={audioBox}>
+          <audio controls css={playerBox}>
+            <source src="/voice/Elearning.wav" type="audio/wav" />
+            <track default kind="captions" src="/voice/Elearning.wav" /> The
+            Audio doesnt work with your browser
+          </audio>
           <audio controls css={playerBox}>
             <source src="/voice/Commercial.wav" type="audio/wav" />
             <track default kind="captions" src="/voice/Commercial.wav" /> The
@@ -104,11 +111,7 @@ export default function Home() {
             <track default kind="captions" src="/voice/Trilogy.wav" /> The Audio
             doesnt work with your browser
           </audio>
-          <audio controls css={playerBox}>
-            <source src="/voice/Elearning.wav" type="audio/wav" />
-            <track default kind="captions" src="/voice/Elearning.wav" /> The
-            Audio doesnt work with your browser
-          </audio>
+
           <div css={newsletterPosition}>
             <Newsletter />
           </div>

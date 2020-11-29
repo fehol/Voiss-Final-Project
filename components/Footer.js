@@ -12,6 +12,9 @@ const footerStyle = css`
       text-decoration: underline;
     }
   }
+  @media screen and (max-width: 720px) {
+    display: block;
+  }
 `;
 
 export default function Footer() {

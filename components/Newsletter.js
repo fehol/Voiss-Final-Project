@@ -3,7 +3,6 @@ import axios from 'axios';
 import { css } from '@emotion/core';
 
 const headerStyle = css`
-  margin-top: 5rem;
   font-size: 1rem;
   color: #f1d74c;
   a {

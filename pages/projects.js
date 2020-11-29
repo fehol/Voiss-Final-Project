@@ -71,7 +71,7 @@ export default function Youtube({ data }) {
   console.log('data', data);
   return (
     <Layout>
-      <title>About</title>
+      <title>Projects</title>
       <main css={mainStyle}>
         <h1 css={headingStyle}>Projects</h1>
         <p>Here you can find my previous projects and projects I work on!</p>

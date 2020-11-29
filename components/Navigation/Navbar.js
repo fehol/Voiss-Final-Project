@@ -1,26 +1,9 @@
 import Link from 'next/link';
 import { css } from '@emotion/core';
 import { SiInstagram, SiFiverr, SiYoutube, SiBars } from 'react-icons/si';
-import { AiOutlineBars } from 'react-icons/ai';
 
 const mainStyle = css`
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-    /* ul {
-      position: absolute;
-      right: 0px;
-      height: 92vh;
-      width: 100%;
-      top: 8vh;
-      background-color: #4b6a8f;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: transform 0.5s ease-in;
-      z-index: 9;
-    } */
+  @media screen and (max-width: 768px) {
   }
 `;
 
@@ -32,11 +15,6 @@ const navStyle = css`
   width: 100%;
   z-index: 9;
   padding: 0 1rem;
-  /* @media (max-width: 1200px) {
-    ul {
-      width: 100%;
-    }
-  } */
 `;
 
 const logo = css`
@@ -65,6 +43,17 @@ const navLinks = css`
   li {
     list-style: none;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    a {
+      &:hover {
+        color: #f2e183;
+      }
+    }
+  }
 `;
 
 export const socialMedia = css`
@@ -88,6 +77,9 @@ export const socialMedia = css`
       color: black;
     }
   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const iconLink = css``;
@@ -97,9 +89,9 @@ const h4Style = css`
   &:hover {
     color: #f1d74c;
   }
-  /* @media screen and (min-width: 600px) {
+  @media screen and (max-width: 768px) {
     display: none;
-  } ; */
+  }
 `;
 
 export default function Navbar() {

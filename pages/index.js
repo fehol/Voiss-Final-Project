@@ -1,8 +1,6 @@
-// import Link from 'next/link';
 import { css } from '@emotion/core';
 import Layout from '../components/Layout';
 import Newsletter from '../components/Newsletter';
-// import { Fragment } from 'react';
 
 const mainStyle = css`
   display: flex;

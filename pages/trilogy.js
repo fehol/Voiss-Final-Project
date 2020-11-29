@@ -1,5 +1,5 @@
-import Layout from '../components/Layout';
 import { css } from '@emotion/core';
+import Layout from '../components/Layout';
 import Newsletter from '../components/Newsletter';
 
 const YOUTUBE_PLAYLIST_ITEMS_API =

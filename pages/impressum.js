@@ -1,5 +1,4 @@
 import { css } from '@emotion/core';
-
 import Layout from '../components/Layout';
 
 const impressumStyle = css`

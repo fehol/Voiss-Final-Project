@@ -86,7 +86,7 @@ const newsletterPosition = css`
 export default function Home() {
   return (
     <Layout>
-      <title>Home</title>
+      <title>Keith Voss - Voice Actor</title>
       <main css={mainStyle}>
         <div css={logoStyle}>
           <img src="/Logo/Logo.svg" alt="VossLogo" css={imgStyle} />

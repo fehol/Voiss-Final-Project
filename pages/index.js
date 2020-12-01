@@ -96,17 +96,17 @@ export default function Home() {
           </h2>
         </div>
         <div css={audioBox}>
-          <audio controls css={playerBox}>
+          <audio title="E-Learning Demo" controls css={playerBox}>
             <source src="/voice/Elearning.wav" type="audio/wav" />
             <track default kind="captions" src="/voice/Elearning.wav" /> The
             Audio doesnt work with your browser
           </audio>
-          <audio controls css={playerBox}>
+          <audio title="Commercial Demo" controls css={playerBox}>
             <source src="/voice/Commercial.wav" type="audio/wav" />
             <track default kind="captions" src="/voice/Commercial.wav" /> The
             Audio doesnt work with your browser
           </audio>
-          <audio controls css={playerBox}>
+          <audio title="Podcast Demo" controls css={playerBox}>
             <source src="/voice/Trilogy.wav" type="audio/wav" />
             <track default kind="captions" src="/voice/Trilogy.wav" /> The Audio
             doesnt work with your browser
